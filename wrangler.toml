@@ -1,0 +1,10 @@
+name               = "example-hono-durable-object"
+main               = "src/index.ts"
+compatibility_date = "2023-04-05"
+
+[durable_objects]
+  bindings = [{ name = "COUNTER", class_name = "Counter" }]
+
+[[migrations]]
+  tag         = "v1"        # Should be unique for each entry
+  new_classes = ["Counter"]

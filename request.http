@@ -1,0 +1,16 @@
+@baseUrl = https://example-hono-durable-object.krist7599555.workers.dev
+
+### set users
+PUT {{baseUrl}}/users
+content-type: application/json
+
+[
+  {"id":"krist","name": "krist"},
+  {"id":"wan","name": "wan"},
+  {"id":"may","name": "may"},
+  {"id":"toon","name": "toon"}
+]
+
+
+### inc counter
+GET {{baseUrl}}/counter/inc
